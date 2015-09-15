@@ -54,6 +54,84 @@
     <div class="outer">
       
       <section id="main">
+      <article id="post-jquery-treetable" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/15/jquery-treetable/">关于 jQuery treetable 动态加载</a>
+    </h1>
+  
+
+        <div class="article-meta">
+          
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2015/09/15/jquery-treetable/">
+      <time datetime="2015-09-15T11:20:43.000Z" itemprop="datePublished">2015-09-15</time>
+    </a>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>最近用到了一款叫做 <a href="https://github.com/ludo/jquery-treetable" target="_blank" rel="external">jQuery treetable</a> 的插件，虽然功能不是非常强大，但是该有的都有，基本上能满足一般的表格树需求，不过<a href="http://ludo.cubicphuse.nl/jquery-treetable/" target="_blank" rel="external">文档</a>稍显简单，接口只是一笔带过，所以用起来不是很顺手，下面就点击节点动态展开子节点写个 Demo:</p>
+<pre><code>$(<span class="string">"#treeTable"</span>).treetable({ 
+    expandable: <span class="literal">true</span>, 
+    onNodeExpand: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+
+        <span class="comment">// this = treetable node</span>
+        <span class="comment">// console.log(this);</span>
+
+        <span class="comment">// demo data, children nodes got from server actually</span>
+        <span class="keyword">var</span> row =   <span class="string">'&lt;tr data-tt-branch="true" data-tt-id="'</span>+ <span class="keyword">this</span>.id * <span class="number">10</span> + <span class="number">1</span> +  
+                            <span class="string">'" data-tt-parent-id="'</span> + <span class="keyword">this</span>.id + <span class="string">'"&gt;'</span> + 
+                        <span class="string">'&lt;td&gt;1&lt;/td&gt;'</span> + 
+                        <span class="string">'&lt;td&gt;2&lt;/td&gt;'</span> + 
+                        <span class="string">'&lt;td&gt;3&lt;/td&gt;'</span> + 
+                        <span class="string">'&lt;td&gt;4&lt;/td&gt;'</span> + 
+                    <span class="string">'&lt;/tr&gt;'</span>;
+
+        <span class="comment">// load branch</span>
+        $(<span class="string">'#treeTable'</span>).treetable(<span class="string">'loadBranch'</span>, <span class="keyword">this</span>, row);
+    },
+    onNodeCollapse: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+        $(<span class="string">'#treeTable'</span>).treetable(<span class="string">'unloadBranch'</span>, <span class="keyword">this</span>);
+    }
+});
+</code></pre><p>需要注意的有几点：</p>
+<ol>
+<li>所有的属性、方法、事件监听都应该当作参数传入 treetable() 方法；</li>
+<li>事件函数中，this 表示 treetable 中的 node 节点对象，其中有 id, parentId 等属性，直接拿来用就可以，很方便；</li>
+<li>如果想让一个 leaf 节点显示为 branch 节点，设置 data-tt-branch=”true” 即可；</li>
+<li>loadBranch 方法是向节点中插入子节点，所以多次展开收起节点会导致重复插入，因此需要考虑监听 onNodeCollapse 事件，在每次收起节点时移除子节点。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://choumeiqishi.github.io/2015/09/15/jquery-treetable/" data-id="ciel9s2qa00029q7povkzay2c" class="article-share-link">分享到</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/treetable/">treetable</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+    
       <article id="post-anan-20150913" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -90,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://choumeiqishi.github.io/2015/09/13/anan-20150913/" data-id="cieii5hms0002f07p5tq7znqy" class="article-share-link">分享到</a>
+      <a data-url="http://choumeiqishi.github.io/2015/09/13/anan-20150913/" data-id="ciel9s2qh00059q7pq45nog05" class="article-share-link">分享到</a>
       
       
     </footer>
@@ -157,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://choumeiqishi.github.io/2015/09/12/about-time/" data-id="cieii5hl10000f07pwfyhofk5" class="article-share-link">分享到</a>
+      <a data-url="http://choumeiqishi.github.io/2015/09/12/about-time/" data-id="ciel9s2ot00009q7pa7unhr5u" class="article-share-link">分享到</a>
       
       
     </footer>
@@ -206,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://choumeiqishi.github.io/2015/09/05/more-code-than-car/" data-id="cieii5hme0001f07phzoz87k5" class="article-share-link">分享到</a>
+      <a data-url="http://choumeiqishi.github.io/2015/09/05/more-code-than-car/" data-id="ciel9s2pv00019q7py0keqw0i" class="article-share-link">分享到</a>
       
       
     </footer>
