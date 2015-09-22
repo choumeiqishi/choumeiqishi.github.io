@@ -148,6 +148,102 @@
           
           
             
+              <a class="post-title-link" href="/2015/09/22/web-process/" itemprop="url">
+                前端工程的几个阶段（或者说几层境界）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-22T21:12:39+08:00" content="2015-09-22">
+            2015-09-22
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/09/22/web-process/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/22/web-process/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p>最近读到一篇文章<a href="https://github.com/fouber/blog/issues/10" target="_blank" rel="external">《前端工程系列文章之——基础篇》</a>，受益匪浅，在此作个笔记。</p>
+<h5 id="1_选择框架/库">1 选择框架/库</h5><p><img src="/images/web-framework.jpg" alt="框架/库"></p>
+<p>这一点没什么好说的，现在估计没有人赤手空拳去用原生代码实现整个应用吧。这就好比从家里去公司上班，假设是一段10公里的路程，基本上没有人腿着去吧，应用了框架或库，就差不多算是骑自行车上班了。</p>
+<h5 id="2_简单构建优化">2 简单构建优化</h5><p><img src="/images/web-build.jpg" alt="自动化"></p>
+<p>随着应用越来越复杂，代码压缩、检查、合并等也越来越成为必须。这一点目前在我的工作范围内产品尚未涉及，准备在自己的 <a href="https://github.com/choumeiqishi/book-management" target="_blank" rel="external">左图右书</a> 应用中应用。再以上班路途为例，有了自动化构建，可以说是开车上班了。</p>
+<h5 id="3_JS/CSS_模块化开发">3 JS/CSS 模块化开发</h5><p><img src="/images/web-modulation.jpg" alt="模块化"></p>
+<p>一个复杂的大型应用，如果不能做到模块化，尤其是 JS 的模块化，后期的维护绝对是个大灾难。就好比开车上班不知道路，也许运气好能到公司，更有可能南辕北辙，渐行渐远。</p>
+<h5 id="4_组件化开发与资源管理">4 组件化开发与资源管理</h5><h6 id="4-1_组件化开发">4.1 组件化开发</h6><p><img src="/images/web-components.png" alt="组件化开发"></p>
+<p>看图说话，作者总结得很到位。</p>
+<h6 id="4-2_静态资源管理">4.2 静态资源管理</h6><p><img src="/images/web-resource.png" alt="资源管理"></p>
+<p>资源的管理实际上就是指资源的加载，因为 Web 应用不同于客户端应用，所有资源都需要去服务器获取，因此资源的加载直接关乎着性能，大型应用更是如此。上图的资源表可能包含如下代码片段：</p>
+<pre><code>{
+    "<span class="attribute">a.js</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/js/a.5f100fa.js"</span></span>,
+        "<span class="attribute">dep</span>": <span class="value">[ <span class="string">"b.js"</span>, <span class="string">"a.css"</span> ]
+    </span>}</span>,
+    "<span class="attribute">a.css</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/css/a.63cf374.css"</span></span>,
+        "<span class="attribute">dep</span>": <span class="value">[ <span class="string">"button.css"</span> ]
+    </span>}</span>,
+    "<span class="attribute">b.js</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/js/b.97193bf.js"</span>
+    </span>}</span>,
+    "<span class="attribute">button.css</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/css/button.de33108.js"</span>
+    </span>}
+</span>}
+</code></pre><p>通过构建工具扫描生成，而需要从这个资源表中加载什么，则是资源框架干的事，比如文中提到的<a href="https://secure.phabricator.com/book/phabdev/article/celerity/" target="_blank" rel="external">Celerity</a>。到了这个阶段，开车上班，就算全城大拥堵，你也能找到一条快速到达公司的路线。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/09/20/mean-stack-1/" itemprop="url">
                 从 LAMP 到 MEAN
               </a>
@@ -575,7 +671,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

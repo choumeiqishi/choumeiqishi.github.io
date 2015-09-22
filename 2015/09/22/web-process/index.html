@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="前端开发," />
 
 
 
@@ -37,31 +37,33 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="时间，就象海绵里的水，只要愿挤，总还是有的。——鲁迅
-
-时间如果以天来衡量，一辈子大概也就36500天，想想真是短，根本不够数的。
-但我们看不到这一点。
-我们最常能想到的时间是以周为单位，从周一到周日，工作五天，然后休息两天，一周就过去了，如此周而复始，不知不觉中，30岁、40岁、50岁，……
-以周为单位的时间是小刀子割肉，你总是感叹又过去了一周，一周又过去了，却很难意识到一生就这样在重复的平淡无">
+<meta name="description" content="最近读到一篇文章《前端工程系列文章之——基础篇》，受益匪浅，在此作个笔记。
+1 选择框架/库
+这一点没什么好说的，现在估计没有人赤手空拳去用原生代码实现整个应用吧。这就好比从家里去公司上班，假设是一段10公里的路程，基本上没有人腿着去吧，应用了框架或库，就差不多算是骑自行车上班了。
+2 简单构建优化
+随着应用越来越复杂，代码压缩、检查、合并等也越来越成为必须。这一点目前在我的工作范围内产品尚未涉及">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于时间">
-<meta property="og:url" content="http://choumeiqishi.github.io/2015/09/12/about-time/index.html">
+<meta property="og:title" content="前端工程的几个阶段（或者说几层境界）">
+<meta property="og:url" content="http://choumeiqishi.github.io/2015/09/22/web-process/index.html">
 <meta property="og:site_name" content="有一天，我们在路上">
-<meta property="og:description" content="时间，就象海绵里的水，只要愿挤，总还是有的。——鲁迅
-
-时间如果以天来衡量，一辈子大概也就36500天，想想真是短，根本不够数的。
-但我们看不到这一点。
-我们最常能想到的时间是以周为单位，从周一到周日，工作五天，然后休息两天，一周就过去了，如此周而复始，不知不觉中，30岁、40岁、50岁，……
-以周为单位的时间是小刀子割肉，你总是感叹又过去了一周，一周又过去了，却很难意识到一生就这样在重复的平淡无">
-<meta property="og:updated_time" content="2015-09-12T12:11:30.000Z">
+<meta property="og:description" content="最近读到一篇文章《前端工程系列文章之——基础篇》，受益匪浅，在此作个笔记。
+1 选择框架/库
+这一点没什么好说的，现在估计没有人赤手空拳去用原生代码实现整个应用吧。这就好比从家里去公司上班，假设是一段10公里的路程，基本上没有人腿着去吧，应用了框架或库，就差不多算是骑自行车上班了。
+2 简单构建优化
+随着应用越来越复杂，代码压缩、检查、合并等也越来越成为必须。这一点目前在我的工作范围内产品尚未涉及">
+<meta property="og:image" content="http://choumeiqishi.github.io/images/web-framework.jpg">
+<meta property="og:image" content="http://choumeiqishi.github.io/images/web-build.jpg">
+<meta property="og:image" content="http://choumeiqishi.github.io/images/web-modulation.jpg">
+<meta property="og:image" content="http://choumeiqishi.github.io/images/web-components.png">
+<meta property="og:image" content="http://choumeiqishi.github.io/images/web-resource.png">
+<meta property="og:updated_time" content="2015-09-22T13:24:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于时间">
-<meta name="twitter:description" content="时间，就象海绵里的水，只要愿挤，总还是有的。——鲁迅
-
-时间如果以天来衡量，一辈子大概也就36500天，想想真是短，根本不够数的。
-但我们看不到这一点。
-我们最常能想到的时间是以周为单位，从周一到周日，工作五天，然后休息两天，一周就过去了，如此周而复始，不知不觉中，30岁、40岁、50岁，……
-以周为单位的时间是小刀子割肉，你总是感叹又过去了一周，一周又过去了，却很难意识到一生就这样在重复的平淡无">
+<meta name="twitter:title" content="前端工程的几个阶段（或者说几层境界）">
+<meta name="twitter:description" content="最近读到一篇文章《前端工程系列文章之——基础篇》，受益匪浅，在此作个笔记。
+1 选择框架/库
+这一点没什么好说的，现在估计没有人赤手空拳去用原生代码实现整个应用吧。这就好比从家里去公司上班，假设是一段10公里的路程，基本上没有人腿着去吧，应用了框架或库，就差不多算是骑自行车上班了。
+2 简单构建优化
+随着应用越来越复杂，代码压缩、检查、合并等也越来越成为必须。这一点目前在我的工作范围内产品尚未涉及">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +73,7 @@
   };
 </script>
 
-  <title> 关于时间 | 有一天，我们在路上 </title>
+  <title> 前端工程的几个阶段（或者说几层境界） | 有一天，我们在路上 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -162,7 +164,7 @@
           
           
             
-              关于时间
+              前端工程的几个阶段（或者说几层境界）
             
           
         </h1>
@@ -171,8 +173,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-12T19:13:36+08:00" content="2015-09-12">
-            2015-09-12
+          <time itemprop="dateCreated" datetime="2015-09-22T21:12:39+08:00" content="2015-09-22">
+            2015-09-22
           </time>
         </span>
 
@@ -182,8 +184,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/09/12/about-time/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/12/about-time/" itemprop="commentsCount"></span>
+              <a href="/2015/09/22/web-process/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/22/web-process/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -197,46 +199,56 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>时间，就象海绵里的水，只要愿挤，总还是有的。<br>——鲁迅</p>
-</blockquote>
-<p>时间如果以天来衡量，一辈子大概也就36500天，想想真是短，根本不够数的。</p>
-<p>但我们看不到这一点。</p>
-<p>我们最常能想到的时间是以周为单位，从周一到周日，工作五天，然后休息两天，一周就过去了，如此周而复始，不知不觉中，30岁、40岁、50岁，……</p>
-<p>以周为单位的时间是小刀子割肉，你总是感叹又过去了一周，一周又过去了，却很难意识到一生就这样在重复的平淡无奇的一周周中度过，最后也不知道会留下些什么。</p>
-<p>以季节为单位来看，时间总是充满伤感。一年四季交替更迭，春天充满希望，夏天热情似火，秋天蔚蓝金黄，冬天白雪茫茫。你总会想起某年的某个季节在某地与某人做了某事，或留恋或后悔，并且记忆中的季节就像童话世界，美好得不像是真的，却又确实存在过，但后来再也没有遇到。对我来说，小时候的春天就在幼儿园课本里画着，真的有那么奇幻；夏天我不喜欢，没有什么印象；秋天似乎太匆忙，也想不起来了；冬天里最深的记忆是，在一个风雪交加的黄昏，我站在老屋的房檐下，望着白茫茫的田野，等待母亲归来。</p>
-<p>以年、十年来算，除了唏嘘变得更老之外，没别的作用了。</p>
-<p>换一种方式来看，从某个群体的角度看，比如对父母来说，自己的孩子就是时间，看着小不点渐渐长大，从满月，百日，周岁，到上幼儿园，上小学，上中学，上大学，然后工作，结婚，生子……不知不觉间自己就已经老了，一生的时间所剩无几。</p>
-<p>对学生来说，时间就是一个学期接着另一个学期，当然了，中间还有寒暑假。开学的时候，对假期流连忘返；放假的时候，把学习扔到了九霄云外。</p>
-<p>对小孩子来说，时间的结点在于过年。不知道现在的小孩对过年是不是期待，但在我们小的时候，过年真是过年啊。提前买好的新衣服在年初一早晨穿上，神气活现；然后去给大人们拜年，压岁钱自然是必不可少；鞭炮烟花放得不亦乐乎；远处的亲戚，也只有在过年的时候才能串上一串，同龄的表兄弟姐们聚在一起好不热闹。那时候的电视节目不像现在这么多，除了中央一台，就剩下了地方省台和当地的一个点播台，平常白天几乎都没什么可看的，但是到了春节，电视剧一天十几集十几集的放，当时看着可真是过瘾啊。这种小孩子的年，长大后就再也找不到了。</p>
-<p>乱七八糟写了这么些，其实我想说的是，对我而言，时间真的是浪费了太多，本可以积跬步以至千里，但却是小流不积，全从指尖溜走，就这样恍惚到了三十一岁。</p>
-<p>突然想起南宋的一首词：</p>
-<blockquote>
-<p>《听雨》</p>
-<p>少年听雨歌楼上，红烛昏罗帐。</p>
-<p>壮年听雨客舟中，江阔云低，断雁叫西风。</p>
-<p>而今听雨僧庐下，鬓已星星也。</p>
-<p>悲欢离合总无情，一任阶前点滴到天明。</p>
-</blockquote>
-<p>该词虽然是在抒发人生无常悲欢离合，但我想到的是，如今正值壮年，当如一首摇滚中所唱：躁起来吧，愁眉骑士！如此方不至于两鬓发白时回首往事，感叹一无所成。</p>
+        <span itemprop="articleBody"><p>最近读到一篇文章<a href="https://github.com/fouber/blog/issues/10" target="_blank" rel="external">《前端工程系列文章之——基础篇》</a>，受益匪浅，在此作个笔记。</p>
+<h5 id="1_选择框架/库">1 选择框架/库</h5><p><img src="/images/web-framework.jpg" alt="框架/库"></p>
+<p>这一点没什么好说的，现在估计没有人赤手空拳去用原生代码实现整个应用吧。这就好比从家里去公司上班，假设是一段10公里的路程，基本上没有人腿着去吧，应用了框架或库，就差不多算是骑自行车上班了。</p>
+<h5 id="2_简单构建优化">2 简单构建优化</h5><p><img src="/images/web-build.jpg" alt="自动化"></p>
+<p>随着应用越来越复杂，代码压缩、检查、合并等也越来越成为必须。这一点目前在我的工作范围内产品尚未涉及，准备在自己的 <a href="https://github.com/choumeiqishi/book-management" target="_blank" rel="external">左图右书</a> 应用中应用。再以上班路途为例，有了自动化构建，可以说是开车上班了。</p>
+<h5 id="3_JS/CSS_模块化开发">3 JS/CSS 模块化开发</h5><p><img src="/images/web-modulation.jpg" alt="模块化"></p>
+<p>一个复杂的大型应用，如果不能做到模块化，尤其是 JS 的模块化，后期的维护绝对是个大灾难。就好比开车上班不知道路，也许运气好能到公司，更有可能南辕北辙，渐行渐远。</p>
+<h5 id="4_组件化开发与资源管理">4 组件化开发与资源管理</h5><h6 id="4-1_组件化开发">4.1 组件化开发</h6><p><img src="/images/web-components.png" alt="组件化开发"></p>
+<p>看图说话，作者总结得很到位。</p>
+<h6 id="4-2_静态资源管理">4.2 静态资源管理</h6><p><img src="/images/web-resource.png" alt="资源管理"></p>
+<p>资源的管理实际上就是指资源的加载，因为 Web 应用不同于客户端应用，所有资源都需要去服务器获取，因此资源的加载直接关乎着性能，大型应用更是如此。上图的资源表可能包含如下代码片段：</p>
+<pre><code>{
+    "<span class="attribute">a.js</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/js/a.5f100fa.js"</span></span>,
+        "<span class="attribute">dep</span>": <span class="value">[ <span class="string">"b.js"</span>, <span class="string">"a.css"</span> ]
+    </span>}</span>,
+    "<span class="attribute">a.css</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/css/a.63cf374.css"</span></span>,
+        "<span class="attribute">dep</span>": <span class="value">[ <span class="string">"button.css"</span> ]
+    </span>}</span>,
+    "<span class="attribute">b.js</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/js/b.97193bf.js"</span>
+    </span>}</span>,
+    "<span class="attribute">button.css</span>": <span class="value">{
+        "<span class="attribute">url</span>": <span class="value"><span class="string">"/static/css/button.de33108.js"</span>
+    </span>}
+</span>}
+</code></pre><p>通过构建工具扫描生成，而需要从这个资源表中加载什么，则是资源框架干的事，比如文中提到的<a href="https://secure.phabricator.com/book/phabdev/article/celerity/" target="_blank" rel="external">Celerity</a>。到了这个阶段，开车上班，就算全城大拥堵，你也能找到一条快速到达公司的路线。</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/前端开发/" rel="tag">#前端开发</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/09/13/anan-20150913/" rel="prev">宝贝日记 - 2015/09/13</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/05/more-code-than-car/" rel="next">多写代码，少看车</a>
+              <a href="/2015/09/20/mean-stack-1/" rel="next">从 LAMP 到 MEAN</a>
             
           </div>
         </div>
@@ -261,8 +273,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/09/12/about-time/"
-                   data-title="关于时间" data-url="http://choumeiqishi.github.io/2015/09/12/about-time/">
+              <div class="ds-thread" data-thread-key="2015/09/22/web-process/"
+                   data-title="前端工程的几个阶段（或者说几层境界）" data-url="http://choumeiqishi.github.io/2015/09/22/web-process/">
               </div>
             
           </div>
@@ -344,7 +356,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1_选择框架/库"><span class="nav-number">1.</span> <span class="nav-text">1 选择框架/库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2_简单构建优化"><span class="nav-number">2.</span> <span class="nav-text">2 简单构建优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3_JS/CSS_模块化开发"><span class="nav-number">3.</span> <span class="nav-text">3 JS/CSS 模块化开发</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4_组件化开发与资源管理"><span class="nav-number">4.</span> <span class="nav-text">4 组件化开发与资源管理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#4-1_组件化开发"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 组件化开发</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4-2_静态资源管理"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 静态资源管理</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
