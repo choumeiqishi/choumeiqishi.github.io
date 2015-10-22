@@ -41,7 +41,11 @@
 
 先体验一把分屏：
 
-分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？">
+分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？
+
+可是就在部署本文的时候，问题来了：
+choumeiqishideMac-mini:Hexo choumeiqishi$ hexo d
+INFO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EI Capitan">
 <meta property="og:url" content="http://choumeiqishi.github.io/2015/10/22/ei-capitan/index.html">
@@ -50,18 +54,26 @@
 
 先体验一把分屏：
 
-分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？">
+分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？
+
+可是就在部署本文的时候，问题来了：
+choumeiqishideMac-mini:Hexo choumeiqishi$ hexo d
+INFO">
 <meta property="og:image" content="http://choumeiqishi.github.io/images/ei-capitan-info.png">
 <meta property="og:image" content="http://choumeiqishi.github.io/images/ei-capitan-split.png">
 <meta property="og:image" content="http://choumeiqishi.github.io/images/ei-capitan-screen.png">
-<meta property="og:updated_time" content="2015-10-22T13:08:04.000Z">
+<meta property="og:updated_time" content="2015-10-22T13:30:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EI Capitan">
 <meta name="twitter:description" content="历时一周，OS X 10.11 (EI Capitan) 终于下载完成并成功安装，6个多G，多少次下载都是半途报错退出，今天终于大功告成。
 
 先体验一把分屏：
 
-分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？">
+分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？
+
+可是就在部署本文的时候，问题来了：
+choumeiqishideMac-mini:Hexo choumeiqishi$ hexo d
+INFO">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -203,7 +215,24 @@
 <p><img src="/images/ei-capitan-split.png" alt="分屏"></p>
 <p>分屏后，屏幕明显不够用，显示器跟不上时代步伐了。看显示器去！是上 4K 呢还是上 4K 呢？</p>
 <p><img src="/images/ei-capitan-screen.png" alt="老DELL"></p>
-</span>
+<p>可是就在部署本文的时候，问题来了：</p>
+<pre><code>choumeiqishideMac-mini:Hexo choumeiqishi$ hexo d
+INFO  Deploying: git
+INFO  Clearing .deploy folder...
+INFO  Copying files from <span class="keyword">public</span> folder...
+xcrun: error: <span class="function">invalid active developer <span class="title">path</span> <span class="params">(/Library/Developer/CommandLineTools)</span>, missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+FATAL Something's wrong. Maybe you can find the solution here: http:<span class="comment">//hexo.io/docs/troubleshooting.html</span>
+Error: xcrun: error: invalid active developer <span class="title">path</span> <span class="params">(/Library/Developer/CommandLineTools)</span>, missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+    at ChildProcess.&lt;anonymous&gt; <span class="params">(/Users/choumeiqishi/Development/Hexo/node_modules/hexo-deployer-git/node_modules/hexo-util/lib/spawn.js:<span class="number">42</span>:<span class="number">17</span>)</span>
+    at ChildProcess.<span class="title">emit</span> <span class="params">(events.js:<span class="number">110</span>:<span class="number">17</span>)</span>
+    at <span class="title">maybeClose</span> <span class="params">(child_process.js:<span class="number">1008</span>:<span class="number">16</span>)</span>
+    at Socket.&lt;anonymous&gt; <span class="params">(child_process.js:<span class="number">1176</span>:<span class="number">11</span>)</span>
+    at Socket.<span class="title">emit</span> <span class="params">(events.js:<span class="number">107</span>:<span class="number">17</span>)</span>
+    at Pipe.<span class="title">close</span> <span class="params">(net.js:<span class="number">476</span>:<span class="number">12</span>)</span></span>
+</code></pre><p> 解决办法：</p>
+<pre><code>xcode-<span class="built_in">select</span> <span class="comment">--install</span>
+</code></pre></span>
       
     </div>
 
